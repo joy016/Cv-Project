@@ -1,6 +1,143 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 body {
   font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  clear: both;
+}
+
+.name {
+  padding: 0.5em;
+  margin: 0;
+  color: #18ba60;
+  font-size: 4em;
+  font-weight: 900;
+}
+.navigation ul {
+  list-style: none;
+  margin: 0 auto;
+  overflow: auto;
+}
+.navigation li {
+  display: inline-block;
+  margin: 1em;
+}
+
+.navigation li a {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5em;
+  color: #ffffff;
+}
+.navigation li a:hover {
+  color: #18ba60;
+}
+.intro {
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("./img/background-girl.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 12em 0;
+  height: 100vh;
+  color: #ffffff;
+}
+.content-intro {
+  margin-top: 5em;
+  overflow: auto;
+}
+.content-intro h1 {
+  margin-top: 1.5em;
+  font-size: 3em;
+  font-weight: 900;
+}
+.content-intro span {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+.btn-work {
+  padding: 20px 50px 20px 50px;
+  background: #18ba60;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.5s linear;
+  border: none;
+}
+.btn-work:hover {
+  background: #ffffff;
+  color: #18ba60;
+}
+.who {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 4em;
+}
+.age {
+  color: #18ba60;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+.picture {
+  float: left;
+  margin-right: 40px;
+  position: relative;
+  top: 1px;
+}
+.aboutme-p {
+  padding: 50px;
+  text-align: left;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+#about-me {
+  padding: 3em;
+  height: 70vh;
+  box-sizing: auto;
+}
+#work-exp {
+  background: linear-gradient(#cde990, #9198e5);
+  height: 100vh;
+}
+#contact {
+  background-color: rgb(0, 255, 8);
+  height: 100vh;
+}
+.icons {
+  margin-top: 10px;
+}
+.icons ul {
+  list-style: none;
+}
+
+.icons ul li {
+  display: inline-block;
+}
+.icons i {
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 40%;
+}
+.icons ul li:hover {
+  color: #18ba60;
 }
