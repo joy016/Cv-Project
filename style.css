@@ -99,20 +99,26 @@ header {
 }
 .picture {
   float: left;
-  margin-right: 40px;
-  position: relative;
-  top: 1px;
+  overflow: hidden;
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-bottom: 3em;
+}
+.about-container {
+  width: 99%;
+  margin: 0 auto;
 }
 .aboutme-p {
-  padding: 50px;
+  width: 70%;
+  float: right;
+  overflow: hidden;
   text-align: left;
-  font-size: 15px;
-  letter-spacing: 1px;
+  margin-top: 2em;
 }
 
 #about-me {
   padding: 3em;
-  height: 70vh;
+  height: 90vh;
   box-sizing: auto;
 }
 #work-exp {
@@ -125,6 +131,7 @@ header {
 }
 .icons {
   margin-top: 10px;
+  padding: 0;
 }
 .icons ul {
   list-style: none;
@@ -140,4 +147,41 @@ header {
 }
 .icons ul li:hover {
   color: #18ba60;
+}
+.work-xp {
+  background-color: aquamarine;
+  display: grid;
+}
+.exp-name {
+  background-color: #9198e5;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.work1 {
+  background-color: #18ba60;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "infor infor-desc";
+}
+.infor {
+  background-color: #f6e1c3;
+  grid-area: infor;
+}
+.infor-desc {
+  grid-area: infor-desc;
+}
+.parent-container {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(2, 2fr);
+}
+
+.box {
+  background-color: #ccc;
+  border: 1px solid #999;
+  text-align: center;
+  width: 100%;
+  padding: 3em;
 }
